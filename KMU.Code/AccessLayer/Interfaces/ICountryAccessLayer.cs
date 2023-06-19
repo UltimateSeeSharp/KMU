@@ -2,7 +2,7 @@
 
 namespace KMU.Code.AccessLayer.Interfaces;
 
-internal interface ICountryAccessLayer
+public interface ICountryAccessLayer
 {
     List<Country> GetCountries();
 

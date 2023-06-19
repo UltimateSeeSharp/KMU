@@ -2,7 +2,7 @@
 
 namespace KMU.Code.AccessLayer.Interfaces;
 
-internal interface IAddressAccessLayer
+public interface IAddressAccessLayer
 {
     List<Address> GetAddresses();
 

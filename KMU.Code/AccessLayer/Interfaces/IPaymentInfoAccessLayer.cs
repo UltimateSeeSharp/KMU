@@ -2,7 +2,7 @@
 
 namespace KMU.Code.AccessLayer.Interfaces;
 
-internal interface IPaymentInfoAccessLayer
+public interface IPaymentInfoAccessLayer
 {
     List<PaymentInfo> GetPaymentInfos();
 

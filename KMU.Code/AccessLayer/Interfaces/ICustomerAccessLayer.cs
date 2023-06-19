@@ -2,7 +2,7 @@
 
 namespace KMU.Code.AccessLayer.Interfaces;
 
-internal interface ICustomerAccessLayer
+public interface ICustomerAccessLayer
 {
     List<Customer> GetCustomers();
 

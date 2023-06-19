@@ -1,17 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using KMU.Wpf.View;
 using System.Windows;
 
-namespace KMU.Wpf
+namespace KMU.Wpf;
+
+public partial class App : Application
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    protected override void OnStartup(StartupEventArgs e)
     {
+        Bootstrapper.Start();
+
+        MainWindow = Bootstrapper.Resolve<MainWindow>();
+        MainWindow.Show();
+    }
+
+    protected override void OnExit(ExitEventArgs e)
+    {
+        try
+        {
+            MainWindow.Close();
+        }
+        catch (System.Exception) { }
     }
 }

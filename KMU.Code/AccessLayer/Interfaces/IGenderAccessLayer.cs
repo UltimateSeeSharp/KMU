@@ -2,7 +2,7 @@
 
 namespace KMU.Code.AccessLayer.Interfaces;
 
-internal interface IGenderAccessLayer
+public interface IGenderAccessLayer
 {
     List<Gender> GetGenders();
 

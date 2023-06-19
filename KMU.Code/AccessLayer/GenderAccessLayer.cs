@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace KMU.Code.AccessLayer;
 
-internal class GenderAccessLayer : IGenderAccessLayer
+public class GenderAccessLayer : IGenderAccessLayer
 {
     private SqlConnection Connection => ConnectionHandler.GetSqlConnection();
 

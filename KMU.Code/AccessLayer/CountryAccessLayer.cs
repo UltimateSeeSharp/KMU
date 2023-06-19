@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace KMU.Code.AccessLayer;
 
-internal class CountryAccessLayer : ICountryAccessLayer
+public class CountryAccessLayer : ICountryAccessLayer
 {
     private SqlConnection Connection => ConnectionHandler.GetSqlConnection();
 
